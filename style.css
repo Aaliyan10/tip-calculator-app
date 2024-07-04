@@ -1,0 +1,160 @@
+/* - Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+- Strong cyan: hsl(172, 67%, 45%)
+ */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    gap: 2rem;
+}
+.logo{
+    margin-top: 50px;
+    display: block;
+}
+main{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 50px;
+    width: 24rem;
+}
+main .heading{
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+main input{
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    text-align: right;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-size: 0.9rem 1.2rem;
+    background-position: 0.7rem center;
+    width: 20rem;
+    
+}
+main .bill #total{
+    background-image: url(images/icon-dollar.svg);
+}
+main .tip .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 0.9rem;
+}
+
+main .tip .card{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    width: 9.5rem;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main .tip .custom{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+}
+main .people #number{
+    background-image: url(images/icon-person.svg);
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+main footer{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px;
+}
+main footer .amounts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main footer .header{
+    color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+main footer .slash{
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+main footer h1{
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+.selected{
+    background-color: hsl(172, 67%, 45%) !important;
+    color: hsl(183, 100%, 15%) !important;
+}
+main footer button{
+    width: 100%;
+    font-size: 20px;
+    background-color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+@media(min-width:800px){
+    body{
+        height: 100vh;
+    }
+    .logo{
+        margin-top: 0px;
+    }
+    main{
+        margin-bottom: 0px;
+        flex-direction: row;
+        width: 61rem;
+    }
+    main input{
+        width: 100%;
+    }
+    .container{
+        width: 55%;
+    }
+    footer{
+        width: 45%;
+    }
+    button{
+        margin-top: 9.5rem;
+    }
+    
+}
